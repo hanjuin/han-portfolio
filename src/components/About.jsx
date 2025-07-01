@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function About() {
   return (
-    <section className=" text-white">
+    <section className=" text-white mb-6">
       {/* <h2 className="text-2xl font-bold mb-4">About Me</h2> */}
       <p className="text-gray-300 font-light pb-5">
         I’m a curious and driven aspiring software engineer currently pursuing a Master’s in Computer and Information Sciences at AUT. I’m passionate about solving real-world problems through clean, efficient code and thoughtful design.
