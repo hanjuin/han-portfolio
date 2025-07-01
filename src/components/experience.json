@@ -1,20 +1,14 @@
 [
     {
-        "date" : "2023-10-01",
-        "title" : "Experience",
-        "description" : "A detailed overview of my professional journey, showcasing the skills and expertise I've developed over the years.",
-        "tags" : ["a", "career", "professional"]
+        "date" : "2022 - 2024",
+        "title" : "Housekeeping Supervisor - Millbrook Resort",
+        "description" : "Supported IT maintenance of housekeeping systems, aiding in troubleshooting and upgrades. Created detailed SOPs and procurement workflows using Excel and Word, improving operational consistency. Developed a budget control system for hotel  supplies to optimize spending and reduce waste.",
+        "tags" : ["Excel", "Word", "Leadership", "Problem Solving", "Time Management"]
     },
     {
-        "date" : "2023-10-02",
-        "title" : "Skills",
-        "description" : "A comprehensive list of my technical and soft skills, highlighting my proficiency in various areas.",
-        "tags" : ["b", "skills", "expertise"]
-    },
-    {
-        "date" : "2023-10-03",
-        "title" : "Projects",
-        "description" : "An overview of the projects I've worked on, demonstrating my ability to apply my skills in real-world scenarios.",
-        "tags" : ["c", "projects", "portfolio"]
+        "date" : "Feb 2016 - May 2016",
+        "title" : "IT Intern - DKSH Malaysia",
+        "description" : "Implemented an electronic document signing system using SharePoint and JavaScript, reducing manual approval time and streamlining the document review workflow across departments. Collected and maintained comprehensive technical documentation for system configurations, workflows, and user guides to support internal IT operations and future onboarding.",
+        "tags" : ["JavaScript", "SharePoint", "Teamwork"]
     }
 ]

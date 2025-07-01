@@ -7,14 +7,14 @@ import Contact from './components/Contact'
 
 function App() {
   return (
-    <div className="bg-gray-900 mb-6">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
-        <div className="flex flex-row gap-8">
-          <div className="basis-1/2">
+    <div className="bg-gray-900">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col lg:flex-row gap-8 items-start">
+          <div className="w-full lg:basis-1/2 lg:sticky lg:top-0 lg:max-h-screen lg:overflow-hidden py-24">
             <Hero />
           </div>
-          <div className="basis-1/2">
-            <div className="">
+          <div className="w-full lg:basis-1/2 py-24">
+            <div className="space-y-16">
               <About />
               <Experience />
               {/* <Projects /> */}
