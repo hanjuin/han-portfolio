@@ -5,7 +5,7 @@
                         "Implemented features for assignment creation, submission tracking, deadline management, and progress monitoring.",
                         "Developed role-based access control (RBAC) to ensure secure login and appropriate access for users (e.g., student, lecturer)."],
         "tags" : ["C#", "ASP.NET MVC", "SQL Server", "HTML", "Bootstrap"],
-        "images" : "src/components/images/assignmentmanagementsystem.png",
+        "images" : "/assignmentmanagementsystem.png",
         "url" : "https://youtu.be/4a5yKT9BOzY"
     },
     {
@@ -14,7 +14,7 @@
                         "Integrated an AI model to analyze product metadata and provide users with intelligent suggestions for eco-friendly alternatives.",
                         "Designed the app interface for real-time scanning, implemented API integration for product lookup, and optimized performance for Android devices."],
         "tags" : ["React Native", "MongoDB", "OpenAI API", "Android", "JavaScript"],
-        "images" : "src/components/images/barcodescanner.png",
+        "images" : "/barcodescanner.png",
         "url" : "https://github.com/hanjuin/GroceryShoppingAssistant"
     },
     {
@@ -23,7 +23,7 @@
                         "Designed to run on a fullscreen tablet.",
                         "Weather forecast integration using Weather API"],
         "tags" : ["Node.js", "Express", "REST API", "AT HOP API","Weather API", "Tailwind CSS", "React", "Leaflet.js"],
-        "images" : "src/components/images/busschedule.png",
+        "images" : "/busschedule.png",
         "url" : "https://github.com/hanjuin/bus-schedule"
     },
     {
@@ -41,7 +41,7 @@
                         "Collected and labeled custom image datasets; trained a deep learning model to identify currency denominations with high accuracy.",
                         "Implemented the system in Python using PyTorch, OpenCV, and ultralytics, with final outputs rendered as annotated video frames."],
         "tags" : ["Python", "YOLO", "Ultralytics", "Vision Transformer", "OpenCV", "PyTorch"],
-        "images" : "src/components/images/currencyrecognition.gif",
+        "images" : "/currencyrecognition.gif",
         "url" : "https://github.com/hanjuin/currency_recognition_yolo"
     }
 ]
