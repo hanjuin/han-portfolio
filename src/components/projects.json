@@ -1,0 +1,47 @@
+[
+    {
+        "title" : "Assignment Management System",
+        "description" : ["Designed and developed a web-based assignment management platform using C# and ASP.NET MVC to facilitate interaction between lecturers and students.",
+                        "Implemented features for assignment creation, submission tracking, deadline management, and progress monitoring.",
+                        "Developed role-based access control (RBAC) to ensure secure login and appropriate access for users (e.g., student, lecturer)."],
+        "tags" : ["C#", "ASP.NET MVC", "SQL Server", "HTML", "Bootstrap"],
+        "images" : "src/components/images/assignmentmanagementsystem.png",
+        "url" : "https://youtu.be/4a5yKT9BOzY"
+    },
+    {
+        "title" : "Barcode Scanning Application with AI",
+        "description" : ["Developed a mobile application using React Native and JavaScript to scan product barcodes and retrieve detailed sustainability information, including carbon footprint and recyclability ratings.",
+                        "Integrated an AI model to analyze product metadata and provide users with intelligent suggestions for eco-friendly alternatives.",
+                        "Designed the app interface for real-time scanning, implemented API integration for product lookup, and optimized performance for Android devices."],
+        "tags" : ["React Native", "MongoDB", "OpenAI API", "Android", "JavaScript"],
+        "images" : "src/components/images/barcodescanner.png",
+        "url" : "https://github.com/hanjuin/GroceryShoppingAssistant"
+    },
+    {
+        "title" : "Bus Timetable Display - AT HOP Real-Time Dashboard",
+        "description" : ["Developed a real-time bus timetable display system using Node.js and Express, integrating with the AT HOP API to fetch live bus data.",
+                        "Designed to run on a fullscreen tablet.",
+                        "Weather forecast integration using Weather API"],
+        "tags" : ["Node.js", "Express", "REST API", "AT HOP API","Weather API", "Tailwind CSS", "React", "Leaflet.js"],
+        "images" : "src/components/images/busschedule.png",
+        "url" : "https://github.com/hanjuin/bus-schedule"
+    },
+    {
+        "title" : "Explainable AI for Traffic Prediction",
+        "description" : ["Analyzed the role of interpretability in traffic prediction using SHAP, explored the use of XAI to inform policy-making in intelligent transportation systems.",
+                        "Developed a machine learning model to predict traffic patterns and assess the impact of various factors on traffic flow.",
+                        "Implemented SHAP values to provide insights into model predictions, enhancing transparency and trust in AI-driven traffic management solutions."],
+        "tags" : ["Machine Learning", "Python", "LightGBM", "SHAP"],
+        "images" : "",
+        "url" : "https://github.com/hanjuin/traffic-prediction-lightgbm"
+    },
+    {
+        "title" : "Currency Recognition Using Deep Learning",
+        "description" : ["Developed a computer vision system to automatically detect and recognize New Zealand dollar bills using YOLO object detection architecture.",
+                        "Collected and labeled custom image datasets; trained a deep learning model to identify currency denominations with high accuracy.",
+                        "Implemented the system in Python using PyTorch, OpenCV, and ultralytics, with final outputs rendered as annotated video frames."],
+        "tags" : ["Python", "YOLO", "Ultralytics", "Vision Transformer", "OpenCV", "PyTorch"],
+        "images" : "src/components/images/currencyrecognition.gif",
+        "url" : "https://github.com/hanjuin/currency_recognition_yolo"
+    }
+]

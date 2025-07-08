@@ -3,19 +3,19 @@ import experienceData from './experience.json';
 import cv from './resources/Han_Juin_Wong_CV.pdf';
 export default function Experience() {
     return (
-        <div>
+        <div id="experience">
             {experienceData.map((exp, index) => (
-                <div key={index} className="group relative text-gray-300 font-light mb-6 p-4 rounded-md transition motion-reduce:transition-none lg:hover:bg-slate-800/50 lg:hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:hover:drop-shadow-lg">
+                <div key={index} className="group relative text-gray-300 font-light mb-6 p-4 rounded-md bg-slate-800/50 shadow-[0_25px_50px_-12px_rgba(0,0,0,0.2)] ">
                     <div className="flex flex-row">
                         <div className="basis-1/3 text-sm font-semibold">
                             {exp.date}
                         </div>
                         <div className="basis-2/3">
                             <p className="font-bold pb-2 text-slate-200">{exp.title}</p>
-                            <p className='pb-4 text-slate-400'>{exp.description}</p>
+                            <p className='pb-4'>{exp.description}</p>
                             <div className="flex flex-wrap gap-2">
                                 {exp.tags.map((tag, tagIndex) => (
-                                    <span key={tagIndex} className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">
+                                    <span key={tagIndex} className="flex items-center rounded-full bg-white px-3 py-1 text-xs font-medium leading-5 text-gray-700">
                                         {tag}
                                     </span>
                                 ))}
@@ -24,9 +24,9 @@ export default function Experience() {
                     </div>
                 </div>
             ))}
-            <div>
+            <div className="flex justify-end">
                 <a 
-                    className='text-gray-300 font-extrabold hover:text-teal-300' 
+                    className=' transition text-gray-700 font-semibold hover:drop-shadow-xl hover:bg-gray-900 hover:text-white bg-white px-5 py-2 rounded-md leading-5' 
                     href={cv}
                     target="_blank"
                     rel="noopener noreferrer"
