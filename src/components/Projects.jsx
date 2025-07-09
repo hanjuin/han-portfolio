@@ -5,8 +5,8 @@ export default function Experience() {
     return (
     <div id="projects">
             {projectsData.map((project, index) => (
-                <div key={index} className="group relative text-gray-300 font-light mb-6 p-4 rounded-md bg-slate-800/50 shadow-[0_25px_50px_-12px_rgba(0,0,0,0.2)] ">
-                    <p className="font-bold text-xl pb-2 text-slate-200 my-4 text-center">{project.title}</p>
+                <div key={index} className="group relative text-white font-light mb-6 px-8 py-4 rounded-md bg-slate-800 shadow-[0_25px_50px_-12px_rgba(0,0,0,0.2)] ">
+                    <p className="font-bold text-xl pb-2 text-white my-4 text-center">{project.title}</p>
                     <div className="">
                         <div className="m-4 flex justify-center">
                             {project.images && (
@@ -16,7 +16,7 @@ export default function Experience() {
                         {/* <div className="basis-2/3"> */}
                             
                             <p className='pb-4'>
-                                <ul className=''>
+                                <ul className='text-justify'>
                                     {project.description.map((line,lineindex) => (
                                         <li key={lineindex} className='pb-2'>
                                             {line}
@@ -32,7 +32,7 @@ export default function Experience() {
                                 ))}
                             </div>
                             <div className="my-4 flex justify-end">
-                                <a className='transition text-gray-700 font-semibold hover:drop-shadow-xl bg-white px-5 py-2 rounded-md leading-5 hover:bg-gray-900 hover:text-white' href={project.url} target="_blank" rel="noopener noreferrer ">Check it out</a>
+                                <a className='transition text-gray-700 font-semibold hover:drop-shadow-xl bg-white px-5 py-2 rounded-md leading-5 hover:text-black hover:drop-shadow-md' href={project.url} target="_blank" rel="noopener noreferrer ">Check it out</a>
 
                             </div>
                         

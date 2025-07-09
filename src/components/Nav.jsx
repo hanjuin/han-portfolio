@@ -52,7 +52,7 @@ export default function Nav() {
             console.log(`Element top position: ${elementTop}`);
             // Account for any fixed headers or sticky elements
             // Adjust this offset as needed based on your layout
-            const offset = 64; // Adjust this value to align with Hero section
+            const offset = 70 ; // Adjust this value to align with Hero section
             
             window.scrollTo({
                 top: elementTop - offset,
@@ -62,12 +62,12 @@ export default function Nav() {
     };
 
   return (
-    <section className="flex justify-center text-white">
-      <div className="bg-slate-800/50 shadow-[0_25px_50px_-12px_rgba(0,0,0,0.2)] rounded-md p-4 w-full">
+    <section className="flex justify-center text-white p-2 ">
+      <div className="bg-slate-800 rounded-md p-4 w-full shadow-sm shadow-black">
         <nav className="w-full">
-          <div className="flex flex-col justify-around text-lg font-semibold gap-8 py-8">
+          <div className="flex flex-col justify-around text-lg font-semibold gap-8 py-8 px-4">
             
-            <a onClick={() => scrollToSection('about')} className="group flex items-center hover:text-gray-300 cursor-pointer">
+            <a onClick={() => scrollToSection('about')} className="group flex items-center cursor-pointer">
               <span className={`nav-indicator mr-4 h-px transition-all motion-reduce:transition-none ${
                 activeSection === 'about' 
                   ? 'w-16 bg-slate-200' 
@@ -75,7 +75,7 @@ export default function Nav() {
               }`}></span>
               About
             </a>
-            <a onClick={() => scrollToSection('experience')} className="group flex items-center hover:text-gray-300 cursor-pointer">
+            <a onClick={() => scrollToSection('experience')} className="group flex items-center  cursor-pointer">
               <span className={`nav-indicator mr-4 h-px transition-all motion-reduce:transition-none ${
                 activeSection === 'experience' 
                   ? 'w-16 bg-slate-200' 
@@ -83,7 +83,7 @@ export default function Nav() {
               }`}></span>
               Experience
             </a>
-            <a onClick={() => scrollToSection('projects')} className="group flex items-center hover:text-gray-300 cursor-pointer">
+            <a onClick={() => scrollToSection('projects')} className="group flex items-center cursor-pointer">
               <span className={`nav-indicator mr-4 h-px transition-all motion-reduce:transition-none ${
                 activeSection === 'projects' 
                   ? 'w-16 bg-slate-200' 

@@ -3,8 +3,9 @@ import Hero from './components/Hero'
 import About from './components/About'
 import Experience from './components/Experience';
 import Projects from './components/Projects'
-import Contact from './components/Contact'
 import Nav from './components/Nav'
+import Techstack from './components/Techstack';
+
 
 import { useEffect } from 'react';
 function App() {
@@ -47,7 +48,7 @@ function App() {
 
 
   return (
-    <div className="bg-gray-500 min-h-screen">
+    <div className="bg-white min-h-screen">
       <div id="particles-js" className='fixed inset-0 z-0 overflow-hidden pointer-events-none'></div>
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-start">
@@ -63,6 +64,7 @@ function App() {
             <div className="space-y-16 lg:space-y-24">
               <About />
               <Experience />
+              <Techstack />
               <Projects />
             </div>
           </div>
