@@ -55,13 +55,12 @@ function App() {
           <div className="w-full lg:basis-1/2 lg:sticky lg:top-8 lg:overflow-hidden">
             <div className="flex flex-col justify-between py-8 gap-8">
               <Hero />
-              
               <Nav />
             </div>
             
           </div>
           <div className="w-full lg:basis-1/2 lg:top-8">
-            <div className="space-y-16 lg:space-y-24">
+            <div className="space-y-16">
               <About />
               <Experience />
               <Techstack />

@@ -5,7 +5,7 @@ export default function Nav() {
     
     // Intersection Observer to detect which section is in view
     useEffect(() => {
-        const sections = ['about', 'experience', 'projects'];
+        const sections = ['about', 'experience', 'techstack','projects'];
         const observerOptions = {
             root: null,
             rootMargin: '-20% 0px -60% 0px', // Trigger when section is 20% from top
@@ -73,7 +73,7 @@ export default function Nav() {
                   ? 'w-16 bg-slate-200' 
                   : 'w-8 bg-slate-600 group-hover:w-16 group-hover:bg-slate-200'
               }`}></span>
-              About
+              About Me
             </a>
             <a onClick={() => scrollToSection('experience')} className="group flex items-center  cursor-pointer">
               <span className={`nav-indicator mr-4 h-px transition-all motion-reduce:transition-none ${
@@ -81,7 +81,15 @@ export default function Nav() {
                   ? 'w-16 bg-slate-200' 
                   : 'w-8 bg-slate-600 group-hover:w-16 group-hover:bg-slate-200'
               }`}></span>
-              Experience
+              Experiences
+            </a>
+            <a onClick={() => scrollToSection('techstack')} className="group flex items-center  cursor-pointer">
+              <span className={`nav-indicator mr-4 h-px transition-all motion-reduce:transition-none ${
+                activeSection === 'techstack' 
+                  ? 'w-16 bg-slate-200' 
+                  : 'w-8 bg-slate-600 group-hover:w-16 group-hover:bg-slate-200'
+              }`}></span>
+              Tech Stack
             </a>
             <a onClick={() => scrollToSection('projects')} className="group flex items-center cursor-pointer">
               <span className={`nav-indicator mr-4 h-px transition-all motion-reduce:transition-none ${
