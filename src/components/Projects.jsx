@@ -31,9 +31,21 @@ export default function Experience() {
                                     </span>
                                 ))}
                             </div>
-                            <div className="my-4 flex justify-end">
-                                <a className='transition text-gray-700 font-semibold hover:drop-shadow-xl bg-white px-5 py-2 rounded-md leading-5 hover:text-black hover:drop-shadow-md' href={project.url} target="_blank" rel="noopener noreferrer ">Check it out</a>
 
+                            <div className="my-4 flex justify-end">
+                                {project.paper && (
+                                    
+                                        <a 
+                                            className='transition text-gray-700 font-semibold bg-white px-5 py-2 mr-4 rounded-md leading-5 hover:text-black hover:drop-shadow-md' 
+                                            href={project.paper} 
+                                            target="_blank" 
+                                            rel="noopener noreferrer"
+                                        >
+                                            View Paper
+                                        </a>
+                                    
+                                )}
+                                <a className='transition text-gray-700 font-semibold bg-white px-5 py-2 rounded-md leading-5 hover:text-black hover:drop-shadow-md' href={project.url} target="_blank" rel="noopener noreferrer ">Check it out</a>
                             </div>
                         
                         {/* </div> */}
