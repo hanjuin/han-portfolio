@@ -26,7 +26,7 @@ export default function Experience() {
             ))}
             <div className="flex justify-end">
                 <a 
-                    className=' transition text-white font-semibold hover:drop-shadow-xl hover:bg-gray-900 hover:text-white bg-slate-800 px-5 py-2 rounded-md leading-5' 
+                    className=' transition text-white font-semibold hover:drop-shadow-xl hover:bg-[#06b6d4] hover:text-white bg-slate-800 px-5 py-2 rounded-md leading-5' 
                     href={cv}
                     target="_blank"
                     rel="noopener noreferrer"

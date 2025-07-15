@@ -5,8 +5,8 @@ import Experience from './components/Experience';
 import Projects from './components/Projects'
 import Nav from './components/Nav'
 import Techstack from './components/Techstack';
-
-
+import PhotoCarousel from './components/PhotoCarousel';
+import { useState } from 'react';
 import { useEffect } from 'react';
 function App() {
     useEffect(() => {
@@ -62,6 +62,7 @@ function App() {
           <div className="w-full lg:basis-1/2 lg:top-8">
             <div className="space-y-16">
               <About />
+              {/* <PhotoCarousel/> */}
               <Experience />
               <Techstack />
               <Projects />

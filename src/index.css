@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  color: #ffffff; 
+  transition: color 0.3s;
+}
+
+.swiper-button-next:hover::after,
+.swiper-button-prev:hover::after {
+  color: #00bcd4; 
+  transition: color 0.3s;
+}
+
