@@ -3,8 +3,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
-
-// ✅ Import Framer Motion
 import { motion, AnimatePresence } from 'framer-motion';
 
 const images = [
@@ -23,29 +21,31 @@ const PhotoCarousel = () => {
   const closeModal = () => setModalImage(null);
 
   return (
-    <div className="px-4 py-6 max-w-5xl mx-auto w-[576px] select-none">
+    <div className="container mx-auto px-4 py-6 select-none">
       <Swiper
         modules={[Navigation]}
         navigation
         spaceBetween={10}
-        slidesPerView={2.5}
+        loop={true}
+        slidesPerView={1.5}
         breakpoints={{
+          480: { slidesPerView: 2 },
           640: { slidesPerView: 2.5 },
           768: { slidesPerView: 3 },
           1024: { slidesPerView: 4 },
         }}
-        className="py-4 cursor-pointer"
+        className="w-full rounded-lg cursor-pointer"
       >
         {images.map((src, idx) => (
-          <SwiperSlide key={idx}>
+          <SwiperSlide key={idx} className="!w-auto">
             <div
               className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition"
-              onClick={() => openModal(src)}
+              onClick={() => setModalImage(src)}
             >
               <img
                 src={src}
                 alt={`Image ${idx + 1}`}
-                className="h-30 w-full object-cover"
+                className="w-full h-[180px] object-cover"
                 draggable={false}
               />
             </div>
@@ -53,18 +53,18 @@ const PhotoCarousel = () => {
         ))}
       </Swiper>
 
-      {/* ✅ Modal with AnimatePresence */}
+      {/* Modal */}
       <AnimatePresence>
         {modalImage && (
           <motion.div
-            className="fixed inset-0 z-50 bg-black bg-opacity-70 flex items-center justify-center"
+            className="fixed inset-0 z-50 bg-black bg-opacity-70 flex items-center justify-center p-4"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={closeModal}
           >
             <motion.div
-              className="bg-white p-4 rounded-lg max-w-3xl w-full mx-4"
+              className="bg-white p-4 rounded-lg w-full max-w-2xl md:max-w-3xl lg:max-w-4xl"
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
