@@ -26,7 +26,7 @@ export default function Experience() {
                             </p>
                             <div className="flex flex-wrap gap-2">
                                 {project.tags.map((tag, tagIndex) => (
-                                    <span key={tagIndex} className="flex items-center rounded-full bg-white px-3 py-1 text-xs font-medium leading-5 text-gray-700">
+                                    <span key={tagIndex} className="flex items-center rounded-full bg-white px-3 py-1 text-xs font-medium leading-5 text-gray-700 hover:bg-cyan-400 cursor-pointer transition">
                                         {tag}
                                     </span>
                                 ))}
@@ -36,7 +36,7 @@ export default function Experience() {
                                 {project.paper && (
                                     
                                         <a 
-                                            className='transition text-gray-700 font-semibold bg-white px-5 py-2 mr-4 rounded-md leading-5 hover:text-black hover:drop-shadow-md' 
+                                            className='transition text-gray-700 font-semibold bg-white px-5 py-2 mr-4 rounded-md leading-5 hover:text-black hover:drop-shadow-md hover:bg-cyan-400' 
                                             href={project.paper} 
                                             target="_blank" 
                                             rel="noopener noreferrer"
@@ -45,7 +45,7 @@ export default function Experience() {
                                         </a>
                                     
                                 )}
-                                <a className='transition text-gray-700 font-semibold bg-white px-5 py-2 rounded-md leading-5 hover:text-black hover:drop-shadow-md' href={project.url} target="_blank" rel="noopener noreferrer ">Check it out</a>
+                                <a className='transition text-gray-700 font-semibold bg-white px-5 py-2 rounded-md leading-5 hover:text-black hover:drop-shadow-md hover:bg-cyan-400' href={project.url} target="_blank" rel="noopener noreferrer ">Check it out</a>
                             </div>
                         
                         {/* </div> */}

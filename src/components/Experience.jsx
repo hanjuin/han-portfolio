@@ -15,7 +15,7 @@ export default function Experience() {
                             <p className='pb-4 text-justify'>{exp.description}</p>
                             <div className="flex flex-wrap gap-2">
                                 {exp.tags.map((tag, tagIndex) => (
-                                    <span key={tagIndex} className="flex items-center rounded-full bg-white px-3 py-1 text-xs font-medium leading-5 text-gray-700">
+                                    <span key={tagIndex} className="flex items-center rounded-full bg-white px-3 py-1 text-xs font-medium leading-5 text-gray-700 hover:bg-cyan-400 cursor-pointer transition">
                                         {tag}
                                     </span>
                                 ))}
