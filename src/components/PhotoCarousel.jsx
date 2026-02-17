@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -20,6 +20,17 @@ const PhotoCarousel = () => {
   const openModal = (src) => setModalImage(src);
   const closeModal = () => setModalImage(null);
 
+  useEffect(() => {
+    const handleEsc = (event) => {
+      if (event.key === 'Escape') {
+        closeModal();
+      }
+    };
+
+    window.addEventListener('keydown', handleEsc);
+    return () => window.removeEventListener('keydown', handleEsc);
+  }, []);
+
   return (
     <div className="container mx-auto px-4 py-6 select-none">
       <Swiper
@@ -38,22 +49,24 @@ const PhotoCarousel = () => {
       >
         {images.map((src, idx) => (
           <SwiperSlide key={idx} className="!w-auto">
-            <div
+            <button
+              type="button"
               className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition"
-              onClick={() => setModalImage(src)}
+              onClick={() => openModal(src)}
+              aria-label={`Open image ${idx + 1}`}
             >
               <img
                 src={src}
                 alt={`Image ${idx + 1}`}
                 className="w-full h-[180px] object-cover"
                 draggable={false}
+                loading="lazy"
               />
-            </div>
+            </button>
           </SwiperSlide>
         ))}
       </Swiper>
 
-      {/* Modal */}
       <AnimatePresence>
         {modalImage && (
           <motion.div
@@ -62,6 +75,9 @@ const PhotoCarousel = () => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={closeModal}
+            role="dialog"
+            aria-modal="true"
+            aria-label="Photo preview"
           >
             <motion.div
               className="bg-white p-4 rounded-lg w-full max-w-2xl md:max-w-3xl lg:max-w-4xl"

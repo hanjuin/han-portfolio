@@ -1,5 +1,11 @@
 [
     {
+        "date" : "Nov 2025 - Feb 2026",
+        "title" : "AI Engineering Intern - Goldenset",
+        "description" : "Contributed to the Titans monorepo, primarily within the Apollo (AI Service). Designed and improved CSV-to-RAG processing pipelines, enabling structured data ingestion and semantic enrichment. Implemented and refined token-based chunking strategies (fixed, hierarchical, semantic, heading-aware) for scalable document processing. Integrated multiple LLM providers (OpenAI, Anthropic, Google Gemini) through a unified interface layer. Wrote unit tests and improved validation logic using PyTest. Participated in code reviews, PR discussions, and production-level debugging in a collaborative engineering environment.",
+        "tags" : ["Python", "OpenAI", "Gemini", "Anthropic", "AWS"]
+    },
+    {
         "date" : "2022 - 2024",
         "title" : "Housekeeping Supervisor - Millbrook Resort",
         "description" : "Supported IT maintenance of housekeeping systems, aiding in troubleshooting and upgrades. Created detailed SOPs and procurement workflows using Excel and Word, improving operational consistency. Developed a budget control system for hotel  supplies to optimize spending and reduce waste.",
