@@ -1,7 +1,7 @@
 import React from 'react';
 import techStack from './techstack.json';
 
-const CARD_CLASS_NAME = 'bg-slate-800 shadow-sm shadow-black rounded-md px-8 py-8';
+const CARD_CLASS_NAME = 'panel px-8 py-8';
 
 function renderTechIcon(tech) {
   if (tech.name === 'GitHub') {
@@ -34,12 +34,12 @@ export default function Techstack() {
       <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-5 gap-4">
         {techStack.map((stack, index) => (
           <section key={`${stack.name}-${index}`} className="mb-6">
-            <h3 className="text-md font-semibold mb-4 text-white capitalize">{stack.name}</h3>
+            <h3 className="text-md font-semibold mb-4 text-cyan-200 capitalize">{stack.name}</h3>
             <div className="space-y-3">
               {stack.technologies.map((tech, techIndex) => (
                 <div key={`${stack.name}-${tech.name}-${techIndex}`} className="flex items-center gap-2">
                   {renderTechIcon(tech)}
-                  <span className="text-white text-sm">{tech.name}</span>
+                  <span className="text-slate-100 text-sm">{tech.name}</span>
                 </div>
               ))}
             </div>

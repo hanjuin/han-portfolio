@@ -2,15 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  body {
+    @apply bg-slate-950 text-slate-100 antialiased;
+    background-image: radial-gradient(circle at top right, rgba(6, 182, 212, 0.2), rgba(2, 6, 23, 1) 45%);
+  }
+}
+
+@layer components {
+  .panel {
+    @apply bg-slate-900/90 border border-slate-700 rounded-md shadow-lg shadow-slate-950/60;
+  }
+}
+
 .swiper-button-next::after,
 .swiper-button-prev::after {
-  color: #ffffff; 
+  color: #e2e8f0;
   transition: color 0.3s;
 }
 
 .swiper-button-next:hover::after,
 .swiper-button-prev:hover::after {
-  color: #00bcd4; 
+  color: #67e8f9;
   transition: color 0.3s;
 }
-

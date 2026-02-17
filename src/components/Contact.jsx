@@ -1,6 +1,6 @@
 import React from 'react';
 
-const LINK_CLASS_NAME = 'hover:text-cyan-400 transition-colors duration-300';
+const LINK_CLASS_NAME = 'text-slate-200 hover:text-cyan-300 transition-colors duration-300';
 
 export default function Contact() {
   return (

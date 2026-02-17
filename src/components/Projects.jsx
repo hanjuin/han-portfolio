@@ -2,10 +2,10 @@ import React from 'react';
 import projectsData from './projects.json';
 
 const TAG_CLASS_NAME =
-  'flex items-center rounded-full bg-white px-3 py-1 text-xs font-medium leading-5 text-gray-700 hover:bg-cyan-400 cursor-pointer transition';
+  'flex items-center rounded-full bg-cyan-400/20 border border-cyan-300/40 px-3 py-1 text-xs font-medium leading-5 text-cyan-100 hover:bg-cyan-300 hover:text-slate-900 cursor-pointer transition';
 
 const BUTTON_CLASS_NAME =
-  'transition text-gray-700 font-semibold bg-white px-5 py-2 rounded-md leading-5 hover:text-black hover:drop-shadow-md hover:bg-cyan-400';
+  'transition text-slate-900 font-semibold bg-cyan-300 px-5 py-2 rounded-md leading-5 hover:text-slate-950 hover:drop-shadow-md hover:bg-cyan-200';
 
 export default function Projects() {
   return (
@@ -13,9 +13,9 @@ export default function Projects() {
       {projectsData.map((project, index) => (
         <article
           key={`${project.title}-${index}`}
-          className="group relative text-white font-light mb-6 px-8 py-4 rounded-md bg-slate-800 shadow-[0_25px_50px_-12px_rgba(0,0,0,0.2)]"
+          className="group relative text-slate-200 font-normal mb-6 px-8 py-4 panel"
         >
-          <h3 className="font-bold text-xl pb-2 text-white my-4 text-center">{project.title}</h3>
+          <h3 className="font-bold text-xl pb-2 text-cyan-200 my-4 text-center">{project.title}</h3>
           <div className="m-4 flex justify-center">
             {project.images && (
               <img
