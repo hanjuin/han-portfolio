@@ -21,7 +21,6 @@ const CarouselSlides = memo(function CarouselSlides({ onOpen }) {
       navigation
       spaceBetween={10}
       loop={false}
-      watchOverflow={true}
       slidesPerView={1.5}
       breakpoints={{
         480: { slidesPerView: 2 },

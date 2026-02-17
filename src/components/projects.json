@@ -1,35 +1,35 @@
 [
     {
         "title" : "Portfolio Website",
-        "description" : ["Developed a personal portfolio website using React, showcasing my projects, skills, and experiences.",
-                        "Implemented responsive design principles to ensure optimal viewing across various devices."],
+        "description" : ["Built a personal portfolio website with React to showcase projects, skills, and experience.",
+                        "Implemented responsive design for consistent viewing across devices."],
         "tags" : ["React", "Tailwind CSS", "JavaScript"],
         "images" : "/portfolio.png",
         "url" : "https://github.com/hanjuin/han-portfolio"
     },
     {
         "title" : "Bus Timetable Display - AT HOP Real-Time Dashboard",
-        "description" : ["Developed a real-time bus timetable display system using Node.js and Express, integrating with the AT HOP API to fetch live bus data.",
-                        "Designed to run on a fullscreen tablet.",
-                        "Weather forecast integration using Weather API"],
+        "description" : ["Built a real-time bus timetable display with Node.js and Express using the AT HOP API.",
+                        "Designed for fullscreen tablet use.",
+                        "Integrated weather forecasts via Weather API."],
         "tags" : ["Node.js", "Express", "REST API", "AT HOP API","Weather API", "Tailwind CSS", "React", "Leaflet.js"],
         "images" : "/busschedule.png",
         "url" : "https://github.com/hanjuin/bus-schedule"
     },
     {
         "title" : "Barcode Scanning Application with AI",
-        "description" : ["Developed a mobile application using React Native and JavaScript to scan product barcodes and retrieve detailed sustainability information, including carbon footprint and recyclability ratings.",
-                        "Integrated an AI model to analyze product metadata and provide users with intelligent suggestions for eco-friendly alternatives.",
-                        "Designed the app interface for real-time scanning, implemented API integration for product lookup, and optimized performance for Android devices."],
+        "description" : ["Built a React Native app to scan barcodes and return sustainability details like carbon footprint and recyclability.",
+                        "Integrated an AI model to analyze metadata and suggest eco-friendly alternatives.",
+                        "Implemented real-time scanning UI, product lookup APIs, and Android performance optimizations."],
         "tags" : ["React Native", "MongoDB", "OpenAI API", "Android", "JavaScript"],
         "images" : "/barcodescanner.png",
         "url" : "https://github.com/hanjuin/GroceryShoppingAssistant"
     },
     {
         "title" : "Assignment Management System",
-        "description" : ["Designed and developed a web-based assignment management platform using C# and ASP.NET MVC to facilitate interaction between lecturers and students.",
-                        "Implemented features for assignment creation, submission tracking, deadline management, and progress monitoring.",
-                        "Developed role-based access control (RBAC) to ensure secure login and appropriate access for users (e.g., student, lecturer)."],
+        "description" : ["Developed a web-based assignment platform using C# and ASP.NET MVC for lecturer-student workflows.",
+                        "Implemented assignment creation, submission tracking, deadline management, and progress monitoring.",
+                        "Added role-based access control for secure user access (student, lecturer)."],
         "tags" : ["C#", "ASP.NET MVC", "SQL Server", "HTML", "Bootstrap"],
         "images" : "/assignmentmanagementsystem.png",
         "url" : "https://youtu.be/4a5yKT9BOzY"
@@ -37,9 +37,9 @@
 
     {
         "title" : "Currency Recognition Using Deep Learning",
-        "description" : ["Developed a computer vision system to automatically detect and recognize New Zealand dollar bills using YOLO object detection architecture.",
-                        "Collected and labeled custom image datasets, trained a deep learning model to identify currency denominations with high accuracy.",
-                        "Implemented the system in Python using PyTorch, OpenCV, and ultralytics, with final outputs rendered as annotated video frames."],
+        "description" : ["Built a YOLO-based computer vision system to detect and recognize New Zealand dollar bills.",
+                        "Collected and labeled custom datasets and trained the model for denomination recognition.",
+                        "Implemented the pipeline in Python with PyTorch, OpenCV, and Ultralytics, outputting annotated video frames."],
         "tags" : ["Python", "YOLO", "Ultralytics", "Vision Transformer", "OpenCV", "PyTorch"],
         "images" : "/currencyrecognition.gif",
         "url" : "https://github.com/hanjuin/currency_recognition_yolo",
@@ -47,9 +47,9 @@
     },
     {
         "title" : "Explainable AI for Traffic Prediction",
-        "description" : ["Analyzed the role of interpretability in traffic prediction using SHAP, explored the use of XAI to inform policy-making in intelligent transportation systems.",
-                        "Developed a machine learning model to predict traffic patterns and assess the impact of various factors on traffic flow.",
-                        "Implemented SHAP values to provide insights into model predictions, enhancing transparency and trust in AI-driven traffic management solutions."],
+        "description" : ["Explored interpretability in traffic prediction using SHAP for policy-relevant insights in intelligent transportation systems.",
+                        "Built a machine learning model to predict traffic patterns and factor impacts on traffic flow.",
+                        "Applied SHAP to improve transparency and trust in AI-driven traffic management."],
         "tags" : ["Machine Learning", "Python", "LightGBM", "SHAP"],
         "images" : "",
         "url" : "https://github.com/hanjuin/traffic-prediction-lightgbm",

@@ -2,19 +2,19 @@
     {
         "date" : "Nov 2025 - Feb 2026",
         "title" : "AI Engineering Intern - Goldenset",
-        "description" : "Contributed to the Titans monorepo, primarily within the Apollo (AI Service). Designed and improved CSV-to-RAG processing pipelines, enabling structured data ingestion and semantic enrichment. Implemented and refined token-based chunking strategies (fixed, hierarchical, semantic, heading-aware) for scalable document processing. Integrated multiple LLM providers (OpenAI, Anthropic, Google Gemini) through a unified interface layer. Wrote unit tests and improved validation logic using PyTest. Participated in code reviews, PR discussions, and production-level debugging in a collaborative engineering environment.",
+        "description" : "Contributed to the Apollo AI service in the Titans monorepo. Improved CSV-to-RAG pipelines, token-based chunking, and multi-provider LLM integration (OpenAI, Anthropic, Gemini). Added tests and validation with PyTest, and supported code reviews, PR discussions, and production debugging.",
         "tags" : ["Python", "OpenAI", "Gemini", "Anthropic", "AWS"]
     },
     {
         "date" : "2022 - 2024",
         "title" : "Housekeeping Supervisor - Millbrook Resort",
-        "description" : "Supported IT maintenance of housekeeping systems, aiding in troubleshooting and upgrades. Created detailed SOPs and procurement workflows using Excel and Word, improving operational consistency. Developed a budget control system for hotel  supplies to optimize spending and reduce waste.",
+        "description" : "Supported IT maintenance and troubleshooting for housekeeping systems. Created SOPs and procurement workflows using Excel and Word. Developed a budget control system to optimize spending and reduce supply waste.",
         "tags" : ["Excel", "Word", "Leadership", "Problem Solving", "Time Management"]
     },
     {
         "date" : "Feb 2016 - May 2016",
         "title" : "IT Intern - DKSH Malaysia",
-        "description" : "Implemented an electronic document signing system using SharePoint and JavaScript, reducing manual approval time and streamlining the document review workflow across departments. Collected and maintained comprehensive technical documentation for system configurations, workflows, and user guides to support internal IT operations and future onboarding.",
+        "description" : "Implemented a SharePoint and JavaScript electronic document signing system to reduce approval time and streamline review workflows. Collected and maintained technical documentation for configurations, workflows, and user guides to support IT operations and onboarding.",
         "tags" : ["JavaScript", "SharePoint", "Teamwork"]
     }
 ]
